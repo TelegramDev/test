@@ -160,7 +160,6 @@ local function callback_reply(extra, success, result)
 	.."Phone number: "..number.."\n"
 	.."Username: @"..(result.from.username or "-----").."\n"
 	.."ID: "..result.from.id.."\n\n"
-        .."Global Rank: "..usergrank.."\n"
 	.."Rank: "..usertype.."\n"
 	.."Position: "..userrank.."\n\n"
 	.."Interface: "..hardware.."\n"
@@ -266,7 +265,6 @@ local function callback_res(extra, success, result)
 	.."Phone number: "..number.."\n"
 	.."Username: @"..(result.username or "-----").."\n"
 	.."ID: "..result.id.."\n\n"
-        .."Global Rank: "..usergrank.."\n"
 	.."Rank: "..usertype.."\n"
 	.."Position: "..userrank.."\n\n"
 	send_large_msg(org_chat_id, info)
@@ -391,7 +389,6 @@ local function callback_info(extra, success, result)
 	.."Phone number: "..number.."\n"
 	.."Username: @"..(result.username or "-----").."\n"
 	.."ID: "..result.id.."\n\n"
-        .."Global Rank "..usergrank.."\n"
 	.."Rank: "..usertype.."\n"
 	.."Position: "..userrank.."\n\n"
 	send_large_msg(org_chat_id, info)
@@ -431,7 +428,6 @@ local function run(msg, matches)
 	.."Phone number: "..number.."\n"
 	.."Username: @"..(result.username or "-----").."\n"
 	.."ID: "..result.id.."\n\n"
-        .."Global Rank "..usergrank.."\n"
 	.."Rank: "..usertype.."\n"
 	.."Position: "..userrank.."\n\n"
 	send_large_msg(org_chat_id, info)
@@ -535,7 +531,6 @@ local function run(msg, matches)
 					.."Phone number: "..number.."\n"
 					.."Username: @"..(msg.from.username or "-----").."\n"
 					.."ID: "..msg.from.id.."\n\n"
-                                        .."Global Rank: "..usergrank.."\n"
 					.."Rank: "..usertype.."\n"
 					.."Position: "..userrank.."\n\n"
 					.."Interface: "..hardware.."\n"
