@@ -1,6 +1,6 @@
 local function run(msg, matches)
 	if #matches < 2 then
-		return "write with 100 fonts!"
+		return "write with 100 font!"
 	end
 	if string.len(matches[2]) > 20 then
 		return "Only 20 corecters!"
